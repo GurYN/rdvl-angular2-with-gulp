@@ -1,0 +1,13 @@
+<h2 *ngIf="!user" class="loaging">Loading user details...</h2>
+
+<div *ngIf="user">
+    <div class="details-avatar">
+        <img src="{{ user.avatar }}" />
+    </div>
+    <h2 class="user-name">{{ user.first_name }} {{ user.last_name }}</h2>
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" [(ngModel)]="user.first_name">
+    <label for="flast-name">Last Name</label>
+    <input type="text" id="last-name" [(ngModel)]="user.last_name">
+    <a class="button" routerLink="/user-list"><< Back</a>
+</div>
