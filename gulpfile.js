@@ -58,4 +58,19 @@ gulp.task('watch', function() {
     gulp.watch(['./src/**/*.html', './src/**/*.js'], ['htmljs']);
 });
 
+gulp.task('deploy', function() {
+    return gulp.src('./')
+        .pipe(plugins.shell(
+            [
+                'git add .',
+                `git commit -m "auto publish with gulp - ${(new Date()).toLocaleString()}"`,
+                'git push -u origin master'
+            ],
+            { 
+                cwd: './dist',
+                ignoreErrors: true
+            }
+        ));
+});
+
 gulp.task('default', ['libs', 'css', 'ts', 'htmljs', 'server', 'watch']);
