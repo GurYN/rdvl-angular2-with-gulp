@@ -1,14 +1,14 @@
 {
   "name": "Angular2WithGulp",
   "version": "1.0.0",
-  "description": "",
+  "description": "RDVL - Gulp example with Angular 2 application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "vincent.cibelli@tcs.com",
+  "license": "MIT",
   "devDependencies": {
     "@types/core-js": "^0.9.40",
     "@types/jasmine": "^2.5.47",
