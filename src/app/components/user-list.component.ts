@@ -4,7 +4,7 @@ import { ApiResponse } from '../shared/models/api-response.model';
 import { UserService } from '../shared/services/user.service';
 
 @Component({
-    selector: 'user-list',
+    selector:    'user-list',
     templateUrl: '/app/components/user-list.component.html'
 })
 

@@ -5,7 +5,7 @@ import { User } from '../shared/models/user.model';
 import { UserService } from '../shared/services/user.service';
 
 @Component({
-    selector: 'user-details',
+    selector:    'user-details',
     templateUrl: '/app/components/user-details.component.html'
 })
 
