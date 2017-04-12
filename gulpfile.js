@@ -64,8 +64,9 @@ gulp.task('deploy', function() {
             [
                 'git add .',
                 `git commit -m "auto publish with gulp - ${(new Date()).toLocaleString()}"`,
-                'git push -u origin master'
+                'git push'
             ],
+
             { 
                 cwd: './dist',
                 ignoreErrors: true
